@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainview{
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 110vh;
+    /* background-color: orange; */
+}
+.maincontaines{
+    height: 7.5vh;
+    margin-top: 5px;
+    display: inline-flex;
+}
+.imgelogo{
+   padding-top: 10px;
+   margin-left: 124px;
+   margin-right: 40px;
+   /* background-color: red; */
+}
+.imgelogo img{
+    height: 4vh;
+}
+
+.immageserachbox{
+    background-color:white;
+    width: 700px;
+    text-align: center;
+    padding-top: 1px;
+    box-shadow: 0.1px 0.1px 0.1px #5f5f5f,
+    0px 0px 0px 1px #ecf0f3,
+     1.2px 1.2px 1.2px #a7aaaa,
+     -2px -2px 2px #ffffff;
+     border-radius: 5px 5px 5px 5px;
+}
+
+#fieldss{
+    height: 50px;
+    width: 350px;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    background-color:white;
+    border: none;
+}
+.option34{
+    width: 200px;
+    height: 55px;
+    border: none;
+    font-size: 15px;
+    color: gray;
+    background-color:white;
+    margin-left: 8px;
+}
+#searchicon{
+   color: gray;
+   margin-right:10px ;
+   margin-bottom: -5px;
+
+}
+#locationicon{
+    color: red;
+    height: 30px;
+    margin-left: -20px;
+    margin-bottom: -5px;
+}
+#lineicon{
+    color: gray;
+   margin-bottom: -5px;
+}
+.lohin{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 80px;
+  font-size: 23px;
+  color: #5f5f5f;
+  /* background-color: yellow; */
+}
+.singhin{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 55px;
+    font-size: 23px;
+    color: #5f5f5f;
+    /* background-color: red; */
+}
+.containergh{
+    /* background-color: aqua; */
+    height: 100vh;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.heaadingsd h2{
+    font-size: 30px;
+    margin-left: 23px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.maincardconatiner{
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    display: inline;
+    /* background-color: pink; */
+}
+
+.maintre{
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 43vh;
+    width: 21vw;
+    /* background-color: yellow; */
+    display: inline-block;
+
+}
+.card-img-top{
+    height: 30vh;
+    border-radius: 15px 15px 15px 15px;
+}
+.list-group-item{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.list-group-item h4{
+    font-size: 18px;
+    font-weight:700;
+}
+.list-group-item h5{
+    font-size: 15px;
+    font-weight:500;
+}
+.list-group-item h6{
+    font-size: 13px;
+    font-weight:400;
+}
+.maincardconatiner:hover{
+    /* transform: scale(1.02); */
+    /* box-shadow: 0.1px 0.1px 0.1px #5f5f5f,
+    0px 0px 0px 1px #ecf0f3,
+     1.2px 1.2px 1.2px #a7aaaa,
+     -1px -1px 1px #ffffff; */
+}

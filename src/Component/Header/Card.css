@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cardsparents{
+    height: 46vh;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 40px;
+    /* background-color: black; */
+}
+.Card1{
+    height: 220px;
+    width: 376px;
+    border-radius: 20px;
+    /* background-color: black; */
+}
+.Card2{
+    height: 220px;
+    width: 376px;
+    border-radius: 20px;
+}
+.Card3{
+    height: 220px;
+    width: 376px;
+    border-radius: 20px;
+}
+
+.cimage{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
+}
+.content{
+    position: absolute;
+    margin-top: -58px;
+    height: 66px;
+    width: 352px;
+    background: fixed;
+    background-color:rgb(246, 243, 243);
+    /* background-color: black; */
+    margin-left: -1.9px;
+    border-radius: 0px 0px 10px 10px;
+}
+.content h3{
+    font-weight:500;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.content h5{
+    font-weight:400 ;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.Card1:hover{
+    transform: scale(1.02);
+}
+.Card2:hover{
+    transform: scale(1.02);
+}
+.Card3:hover{
+    transform: scale(1.02);
+}

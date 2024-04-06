@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parents{
+    position: relative;
+    text-align: center;
+    height: 65vh;
+
+}
+img{
+    width: 100%;
+    height: 65vh;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
+.Navbar{
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: large;
+    color: aliceblue;
+    font-weight: bold;
+}
+.navbar-right {
+    padding: 0px 50px;
+    font-weight: 500;
+    /* color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+
+}
+#sa{
+    text-decoration: none;
+    color: aliceblue;
+    /* background-color: black; */
+    font-size: 18px;
+    padding-right: 100px;
+}
+#lg{
+    text-decoration: none;
+    color: aliceblue;
+    /* background-color: black; */
+    font-size: 18px;
+}
+
+ #as{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar-left{
+    font-weight: 500;
+}
+.resto{
+    margin-right: 50px;
+    margin-left: 25px;
+}
+#restroo{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+.login8{
+    margin-right: 50px;
+    font-weight: 500;
+}
+.input{
+    position: absolute;
+    top: 22%;
+    left: 510px;
+    right: 510px;
+    text-align: center;
+}
+
+.img{
+    height: 58px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+.title{
+    position: absolute;
+    top: 38%;
+    left: 300px;
+    right: 300px;
+    text-align: center;
+}
+.title h1{
+    font-size: 42px;
+    font-weight: 500;
+    color: aliceblue;
+    padding-bottom: 0.5%;
+}
+.option{
+    height: 56px;
+    width: 440px;
+    border-radius: 10px 0px 0px 10px;
+}
+#one{
+    height: 56px;
+    width: 440px;
+    border-radius: 0px 10px 10px 0px;
+     margin-top: 25px;
+}
+

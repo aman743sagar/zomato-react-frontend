@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    height: 69vh;
+}
+.parents23{
+    height:53vh ;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.phone{
+    padding-top: 10px;
+    height: 53vh;
+    width: 275px;
+    text-align: center;
+    margin-right: -30px;
+}
+.phone img{
+    height: 330px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-right: -50px;
+}
+.get-the{
+   height: 53vh;
+   width: 35vw;
+   margin-left: -70px;
+}
+.appp{
+   padding-top: -40px;
+}
+.appp h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: -13px;
+}
+.appp h6{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 12px;
+    color: rgb(52, 49, 49);
+}
+.radiaobutton{
+    height: 20vh;
+    padding-top: 10px;
+}
+.seriser{
+    margin-top: 5px;
+}
+#oneee{
+    margin-right: 8px;
+    height: 23px;
+}
+#fgh{
+    font-size: 25px;
+    margin-right: 60px;
+    font-weight: 300;
+     color: rgb(52, 49, 49);
+
+}
+.inputfiled1{
+    height:52px;
+    margin-top: 25px;
+    padding-left: 5px;
+}
+#inps{
+    height: 52px;
+    width: 275px;
+      border-radius: 5px 5px 5px 5px ;
+}
+#shar{
+    height: 52px;
+    width: 172px;
+    margin-left: 10px;
+    background-color: rgb(165, 52, 52);
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px ;
+}
+#shar:hover{
+        transform: scale(1.01);
+    }
+
+.downlod{
+    height: 16.5vh;
+}
+.downlod h5{
+    font-size: 17px;
+    font-weight: 200;
+    color: rgb(52, 49, 49);
+ 
+}
+#imag34{
+    height: 60px;
+    width: 190px;
+    padding-top: 15px;
+   padding-right: 25px;
+}
+#imag35{
+    height: 60px;
+    width: 190px;
+    padding-top: 15px;
+   padding-left: 10px;
+}

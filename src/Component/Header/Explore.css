@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Explore-container{
+    height: 70vh;
+    /* background-color: aqua; */
+}
+.aprents{
+    height: 70vh;
+    /* background-color: blue; */
+    padding-left: 255px;
+    padding-right: 255px;
+}
+.heading{
+    height: 67px;
+    /* background-color: brown; */
+    font-size: 20px;
+    padding-left: 5px;
+}
+.heading h1{
+    font-weight: 500;
+}
+.blocks{
+    height: 60vh;
+    /* background-color: gray; */
+ 
+}
+.fb1{
+    height: 10.5vh;
+    /* background-color: aqua; */
+    margin-bottom: 18px;
+    border-radius:15px 15px 15px 15px;
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: rgb(38, 38, 38);
+    box-shadow: 0.1px 0.1px 0.1px #5f5f5f,
+    0px 0px 0px 1px #ecf0f3,
+     1.2px 1.2px 1.2px #a7aaaa,
+     -1px -1px 1px #ffffff;
+}
+#arrows{
+   display: flex;
+   justify-content: end;
+   margin-top: -20px;
+  margin-right: 25px;
+
+}
