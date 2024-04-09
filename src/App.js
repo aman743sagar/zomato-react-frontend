@@ -8,6 +8,9 @@ import View from './Component/Authentication/View';
 import  {Routes,Route} from 'react-router-dom'
 import Viewfood from './Component/Authentication/Viewfood';
 import Addproduct from './Component/Authentication/Addproduct';
+import Viewcard from './Component/Authentication/Viewcard';
+
+
 function App() {
   return (
     <div >
@@ -20,6 +23,8 @@ function App() {
        <Route path='/view' element={<View/>}/>
        <Route path='/view/:restroId/product' element={<Viewfood/>}/>
        <Route path='/view/:restroId/addproduct' element={<Addproduct/>}/>
+       <Route path='/view/:restroId/viewcart' element={<Viewcard/>}/>
+      
       
        </Routes>
     </div>
