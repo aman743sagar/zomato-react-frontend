@@ -12,6 +12,8 @@ const Viewfood = () => {
   const {restroId}=useParams()
   const [restaurant, setRestaurant] = useState({});
   const [product,Setproduct]=useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [cart, setCart] = useState([]);
   const zomatologo = "https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png";
 
    useEffect(()=>{
@@ -21,7 +23,6 @@ const Viewfood = () => {
           setRestaurant(restaurantResponse.data);
 
           const productResponse = await axios.get('http://localhost:7000/api/proud');
-          // const productResponse = await axios.get('http://localhost:4000/api/product');
         const filteredProducts = productResponse.data.filter(p => p.restaurant === restroId);
           console.log(productResponse.data,"resss");
 
@@ -30,11 +31,48 @@ const Viewfood = () => {
     showProduct()
 
    },[])
+   const addproductToCart=(id)=>{
+    let updateproduct=[...product]
+    updateproduct[id].quantity=((updateproduct[id].quantity || 0)+1)
+    Setproduct(updateproduct)
+
+    const productToAdd = { ...product[id]}; /////////////
+    setCart([...cart, productToAdd]);       ////////////
+    calculateTotalPrice();
+   }
+
+   const handleplus=(id)=>{
+    let updatedproduct = [...product];
+    updatedproduct[id].quantity = ((updatedproduct[id].quantity || 0) + 1);
+    Setproduct(updatedproduct);
+
+    const productToAdd = { ...product[id] };
+    setCart([...cart.filter(item => item._id !== productToAdd._id), productToAdd]);
+    calculateTotalPrice();
+   }
+
+   const handleminus=(id)=>{
+    let updatedproduct = [...product];
+    updatedproduct[id].quantity = Math.max(((updatedproduct[id].quantity || 0) - 1), 0);
+    Setproduct(updatedproduct);
+
+    const productToRemove = { ...product[id] };
+    setCart(cart.filter(item => item._id !== productToRemove._id));
+    calculateTotalPrice();
+   }
+   const calculateTotalPrice = () => {
+    const totalPrice = product.reduce((acc, curr) => {
+      return acc + (curr.price || 0) * (curr.quantity || 0);
+    }, 0);
+    setTotalPrice(totalPrice);
+  };
+
+
   const addProduct = () => {
     navigate(`/view/${restroId}/addproduct`);
   };
   const viewcart =()=>{
-    navigate(`/view/${restroId}/viewcart`)
+    navigate(`/view/${restroId}/viewcart`,{state:{cart,totalPrice,restaurant}})
   }
 
 
@@ -52,14 +90,14 @@ const Viewfood = () => {
                     <option >Lucknow</option>
                 </select>
                 <MoreVertIcon id='lineicon'/>
-               <SearchIcon id='searchicon'/>  <input    id='fieldss' name='data'  type="text" placeholder="Search"/>
+               <SearchIcon id='searchicon'/>  <input id='fieldss' name='data'  type="text" placeholder="Search"/>
              </div>
              <div className='lohin'>Login</div>
              <div className='singhin'>Singin</div>
       </div>
          <div className='button_cart'>
             <div id='vbutton'> <button onClick={addProduct}> Add product</button></div>
-            <div id='vbutton' > <button onClick={viewcart}>View cart</button></div>
+            <div id='vbutton' > <button onClick={viewcart}>View cart ({cart.length}) </button></div>
          </div>
             <div className='resturant-product-conatiner'>
                  <div className='resturantconatinerd'>
@@ -67,7 +105,7 @@ const Viewfood = () => {
                    <div><img id='restroImaged' src={restaurant.image} alt='Restaurant' /></div>
                </div>
             <div className='product-card-conatiner'>{
-            product.map((res)=>{
+            product.map((res,id)=>{
               return(
 
                <div className='product-card'>
@@ -75,9 +113,19 @@ const Viewfood = () => {
                 <div> <h3 id='pname'>{res.name}</h3></div>
                 <div><h5 id='pdescriptions'>{res.descriptions}</h5></div>
                 <div> <h5 id='pprice'>$ {res.price}</h5></div>
-                <div><button id='addplusminis'>Add</button></div>
-
-               </div>
+                <div>
+                <div id='quantiy'>Quantity:{res.quantity || 0}</div>
+                <div id='priceh'>Totel Price:{res.price*(res.quantity ||0)}</div>
+                  { !res.quantity ?(
+                    <button id='addplusminis' onClick={()=>addproductToCart(id)}  >Add</button>
+                  ):(
+                    <>
+                     <button id='plusbutton' onClick={() => handleplus(id)}>+</button>
+                    <button id='minisbutton' onClick={() => handleminus(id)}>-</button>
+                    </>
+                 ) }
+                </div>
+          </div>
 )})}
  </div>
   </div>

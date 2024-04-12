@@ -9,6 +9,7 @@ import  {Routes,Route} from 'react-router-dom'
 import Viewfood from './Component/Authentication/Viewfood';
 import Addproduct from './Component/Authentication/Addproduct';
 import Viewcard from './Component/Authentication/Viewcard';
+import Success from './Component/Authentication/Success'
 
 
 function App() {
@@ -21,9 +22,11 @@ function App() {
        <Route path='/singUp' element={<SignUp/>}/>
        <Route path='/addrestro' element={<Addrestro/>}/>
        <Route path='/view' element={<View/>}/>
+       <Route  path='/sucess'   element={Login2? <Success/>:<Login2/>}/>
        <Route path='/view/:restroId/product' element={<Viewfood/>}/>
        <Route path='/view/:restroId/addproduct' element={<Addproduct/>}/>
        <Route path='/view/:restroId/viewcart' element={<Viewcard/>}/>
+       
       
       
        </Routes>

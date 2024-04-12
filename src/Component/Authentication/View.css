@@ -114,33 +114,37 @@
     width: 21vw;
     /* background-color: yellow; */
     display: inline-block;
+  
 
 }
 .card-img-top{
+    padding-top: 5px;
     height: 30vh;
     border-radius: 15px 15px 15px 15px;
 }
 .list-group-item{
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 5px;
     margin-right: 5px;
 }
 .list-group-item h4{
-    font-size: 18px;
+    font-size: 20px;
     font-weight:700;
 }
 .list-group-item h5{
-    font-size: 15px;
-    font-weight:500;
+    font-size: 16px;
+    font-weight:600;
+    color: rgb(36, 35, 35);
 }
 .list-group-item h6{
-    font-size: 13px;
-    font-weight:400;
+    font-size: 15px;
+    font-weight:600;
+    color: rgb(36, 35, 35);
 }
-.maincardconatiner:hover{
-    /* transform: scale(1.02); */
-    /* box-shadow: 0.1px 0.1px 0.1px #5f5f5f,
-    0px 0px 0px 1px #ecf0f3,
-     1.2px 1.2px 1.2px #a7aaaa,
-     -1px -1px 1px #ffffff; */
+.maintre:hover{
+     transform: scale(1.02);
+     box-shadow: 0.2px 0.2px 0.2px #5f5f5f,
+     0px 0px 0px 2px #ecf0f3,
+     2px 2px 2px #a7aaaa,
+     -2px -2px 2px #ffffff;
 }

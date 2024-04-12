@@ -77,7 +77,7 @@ const Addproduct = () => {
           }
           // https://fzdfcdjjbsnwmdvxhfrh.supabase.co/storage/v1/object/public/zomato/restaurant_images/india-flag.jpg
           // Get the URL of the uploaded image
-          const imageUrl = `${supabaseUrl}/storage/v1/object/public/zomato/restaurant_images/${restaurantData.image.name}`;
+          const imageUrl = `${supabaseUrl}/storage/v1/object/public/zomato/prouduct_images/${restaurantData.image.name}`;
           console.log(imageUrl,"blocking zzzzzzz");
           // Save restaurant data to MongoDB with image URL
           const response = await axios.post('http://localhost:7000/api/proud', { ...restaurantData, image:imageUrl, restroId });

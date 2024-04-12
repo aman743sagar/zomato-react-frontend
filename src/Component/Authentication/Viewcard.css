@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maine-content-cart{
+    /* height: 90vh; */
+    width: 35vw;
+    /* background-color: aqua; */
+    margin-left: 550px;
+    margin-right: 600px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0.1px 0.1px 0.1px #5f5f5f,
+    0px 0px 0px 1px #ecf0f3,
+     1.2px 1.2px 1.2px #a7aaaa,
+     -2px -2px 2px #ffffff;
+}
+.cartierhg{
+    padding-top: 20px;
+    text-align: center;
+}
+.cartlogo{
+    text-align: center;
+    margin-top: 50px;
+    size: 50px;
+}
+.cartheadingh{
+    padding-top: 5px;
+    height: 60px;
+    text-align: center;
+    color:white;
+    font-size: 22px;
+    background-color:red;
+    border-radius: 5px 5px 5px 5px;
+}
+.cartheadingh h2{
+   /* padding-top: 20px; */
+    font-weight: 600;
+}
+#lohgo{
+font-size: 200px;
+color: #5f5f5f;
+}
+.item-name{
+    height: 6vh;
+    color: rgb(42, 40, 40);
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.cartdetail{
+    height: 13vh;
+    margin-top: 5px;
+    border-top: 1px solid rgb(211, 205, 205);
+    border-bottom: 1px solid rgb(211, 205, 205);
+    /* background-color: blueviolet; */
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.grennbutton{
+    background-color: red;
+    height:40px;
+    margin-top: -10px;
+}
+#plusbuttton{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    height:32px;
+    width: 45px;
+    background-color:white;
+    color: red;
+    border: none;
+    font-size: 20px;
+    border-radius: 2px 2px 2px 2px ;
+}
+#minnnbutton{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height:32px;
+    width: 45px;
+    background-color: white;
+    color:  red;
+    border: none;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 3px;
+    border-radius: 2px 2px 2px 2px ;
+}
+.quanttttiy{
+    height: 50px;
+    width: 90px;
+    color: white;
+    margin-left: 20px;
+}
+#bullet{
+    color:  rgb(42, 40, 40);
+    padding-top: 5px;
+}
+.coupon{
+    height: 70px;
+   margin-top: 5px;
+   /* border-bottom: 1px solid rgb(211, 205, 205); */
+   border-top:1px solid rgb(211, 205, 205) ;
+}
+.coupoheading h4{
+     font-size: 19px;
+     font-weight: 600;
+}
+#couponselect{
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+#couponbutton{
+    height: 30px;
+    width: 110px;
+    margin-left: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+}
+.bill-details-cart{
+    height: 160px;
+    border-bottom: 1px solid rgb(211, 205, 205);
+}
+.detailheadingfd h3{
+    font-size: 19px;
+    font-weight: 600;
+}
+.maindetbox{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-top: 2px;
+    font-size: 17px;
+    font-weight: 500;
+}
+#paybutton{
+    height: 50px;
+    margin-top: 5px;
+}
+#pbutton{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
